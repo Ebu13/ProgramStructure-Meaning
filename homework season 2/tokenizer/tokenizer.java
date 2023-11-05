@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -14,8 +15,10 @@ public class Main {
         if (satirlar != null) {
             List<String> kelimeler = new ArrayList<>();
             for (String satir : satirlar) {
-                String[] satirKelimeleri = satir.split("\\s+|,"); // Boşluklara ve virgüllere göre satırı böler
-
+                String[] satirKelimeleri = satir.split("\\s+|,");
+                for (int i = 0; i < satirKelimeleri.length; i++) {
+                    satirKelimeleri[i] = satirKelimeleri[i].replaceAll("[\\[\\]]", ""); // Köşeli parantezleri kaldır
+                }
                 Collections.addAll(kelimeler, satirKelimeleri); // Kelimeleri listeye ekle
             }
             for (String kelime : kelimeler) {
