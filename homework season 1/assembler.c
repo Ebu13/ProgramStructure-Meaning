@@ -3,7 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 
-//Ebubekir Sıddık Nazlı
+//Ebubekir SÄ±ddÄ±k NazlÄ±
 //02210224005
 
 int main()
