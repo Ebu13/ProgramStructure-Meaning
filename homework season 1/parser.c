@@ -3,9 +3,6 @@
 #include <string.h>
 #include <ctype.h>
 
-//Ebubekir Sýddýk Nazlý
-//02210224005
-
 int main(){
 	
 	char dizi[1000];

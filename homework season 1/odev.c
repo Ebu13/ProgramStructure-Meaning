@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-//Ebubekir Sýddýk Nazlý
-//02210224005
-
 
 void toplama(char s1[100],char s2[100]){
 	int num1[100],num2[100],sum[100];

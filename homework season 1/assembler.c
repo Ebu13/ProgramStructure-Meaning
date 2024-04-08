@@ -3,8 +3,6 @@
 #include <string.h>
 #include <ctype.h>
 
-//Ebubekir SÄ±ddÄ±k NazlÄ±
-//02210224005
 
 int main()
 {
@@ -28,22 +26,22 @@ int main()
 
 	if ((file = fopen(dosya, "r")) == NULL)
 	{
-		//dosya a??l??? kontrol ediliyor
+		//dosyanýn açýlmasý kontrol ediliyor
 
 		printf("Dosya okuma basarisiz");
 	}
 	else
 	{
-		printf("Dosya okuma basarili\n");	//dosya ba?ar?l? bir ?ekilde a??ld?ysa
+		printf("Dosya okuma basarili\n");	//dosya basarýlý bir þekilde açýldýysa
 		while (!feof(file))
 		{
-			//kaynak kodu dosyas? ekrana yaz?l?yor 
+			//kaynak kodu dosyasý ekrana yazýlýyor 
 			fscanf(file, "%c", &dizi[i]);
 			printf("%c", dizi[i]);
 			i++;
 		}
 
-		fclose(file);	//dosya kapat?ld?
+		fclose(file);	//dosya kapatýldý
 		int j = 0;
 		printf("\n");
 		while (j < i)
@@ -458,7 +456,7 @@ int main()
 						}
 						else
 						{
-							//RAM[3 bsmk]
+							//RAM[3 basamak]
 							if (dizi[j + 10] == 'A')
 							{
 								RAM[(((int) dizi[j + 5] - 48) *10 + ((int) dizi[j + 6] - 48) *10) + (int) dizi[j + 7] - 48] = AX;
@@ -500,7 +498,7 @@ int main()
 							}
 							else
 							{
-								//RAM-sayilar
+								//RAM-sayýlar
 								if (dizi[j + 11] == (int) 10)
 								{
 									RAM[(((int) dizi[j + 5] - 48) *10 + (int) dizi[j + 6] - 48) *10 + (int) dizi[j + 7] - 48] = (int) dizi[j + 10] - 48;
@@ -569,7 +567,7 @@ int main()
 					}
 					else
 					{
-						//TOP-AX-sayilar
+						//TOP-AX-sayýlar
 						if (dizi[j + 7] > 47 && dizi[j + 7] < 58)
 						{
 							if (dizi[j + 8] > 47 && dizi[j + 8] < 58)
